@@ -1,8 +1,8 @@
 #### Steps to follow before running the app (the below steps are done on a Windows machine using WAMP):
 1. Download [ffmpeg](https://www.ffmpeg.org/download.html), extract it and add it to PATH
 2. Install WAMP Server, create a folder called 'live' in the 'www' directory
-3. To prevent CORS issue with WAMP you must add *Header set Access-Control-Allow-Origin "\*"* in the *httpd-vhosts
-.conf* file and make sure the *headers-module" is installed.
+3. To prevent CORS issue with WAMP you must add the line - *Header set Access-Control-Allow-Origin "\*"* in the *httpd
+-vhosts.conf* file and make sure the *headers-module* is installed.
 4. Now create a batch file with the following lines and save it
     ```shell script
    cd c:\wamp64\www\live
@@ -14,5 +14,6 @@
    PAUSE```
  5. Run the batch file. If successfully done you should see some output in the command prompt and streaming files will
   begin getting created in the *C:\wamp64\www\live* directory.
- 6. Now you can run the app.
+ 6. Make sure WAMP is running along with all its services.
+ 7. Now you can run the app.
 

@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <video id="video" autoPlay="true" controls="controls" ref={refVideo} />
+      <video id="video" autoPlay={true} controls="controls" ref={refVideo} />
     </div>
   );
 }
